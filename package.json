@@ -1,6 +1,6 @@
 {
   "name": "@tcn-dev/tcn",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "CLI tool to create a new Turbo Convex Starter Kit",
   "bin": {
     "create-tcn": "./create-init/src/cli.js"
