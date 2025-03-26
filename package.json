@@ -1,0 +1,46 @@
+{
+  "name": "@tcn-dev/tcn",
+  "version": "1.0.3",
+  "description": "CLI tool to create a new Turbo Convex Starter Kit",
+  "bin": {
+    "create-tcn": "./create-init/src/cli.js"
+  },
+  "main": "create-init/src/cli.js",
+  "scripts": {
+    "start": "node create-init/src/cli.js",
+    "test": "node create-init/src/cli.js --dry-run"
+  },
+  "keywords": [
+    "convex",
+    "turborepo",
+    "nextjs",
+    "starter-kit",
+    "cli",
+    "create-app",
+    "create",
+    "init"
+  ],
+  "author": "Asad Komi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asadkomidev/tcn.git"
+  },
+  "bugs": {
+    "url": "https://https://github.com/asadkomidev/tcn/issues"
+  },
+  "homepage": "https://https://github.com/asadkomidev/tcn#readme",
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^9.5.2",
+    "fs-extra": "^11.3.0",
+    "prompts": "^2.4.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "create-init/src/cli.js",
+    "README.md",
+    "LICENSE"
+  ]
+}

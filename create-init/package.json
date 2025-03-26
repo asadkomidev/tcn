@@ -1,0 +1,15 @@
+{
+  "name": "create-init",
+  "description": "A Convex, Next.js, and Turborepo starter kit",
+  "version": "0.0.0",
+  "author": "Asad Komi <komitechllc@gmail.com>",
+  "bin": "src/cli.js",
+  "files": [
+    "src",
+    "templates"
+  ],
+  "dependencies": {
+    "create-create-app": "^7.3.0"
+  },
+  "license": "MIT"
+}
