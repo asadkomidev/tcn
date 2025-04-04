@@ -16,11 +16,9 @@ Create a new Turbo Convex Starter Kit project with a single command.
 # Using npm
 npm create @tcn-dev/tcn@latest
 
-# Using yarn
-yarn create @tcn-dev/tcn
+# Using npx
+npx @tcn-dev/tcn
 
-# Using pnpm
-pnpm create @tcn-dev/tcn
 ```
 
 ### Options
