@@ -1,9 +1,9 @@
 {
   "name": "@tcn-dev/tcn",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "CLI tool to create a new Turbo Convex Starter Kit",
   "bin": {
-    "create-tcn": "./create-init/src/cli.js"
+    "create-tcn": "create-init/src/cli.js"
   },
   "main": "create-init/src/cli.js",
   "scripts": {
@@ -31,7 +31,7 @@
   "homepage": "https://https://github.com/asadkomidev/tcn#readme",
   "license": "MIT",
   "dependencies": {
-    "execa": "^9.5.2",
+    "execa": "^5.1.1",
     "fs-extra": "^11.3.0",
     "prompts": "^2.4.2"
   },
@@ -42,5 +42,8 @@
     "create-init/src/cli.js",
     "README.md",
     "LICENSE"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

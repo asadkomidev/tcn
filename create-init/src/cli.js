@@ -62,7 +62,15 @@ const handleError = (error, step) => {
     // Step 3: Install dependencies with pnpm
     console.log("\n📥 Installing dependencies with pnpm...");
     if (!isDryRun) {
-      await execa("pnpm", ["install"], { stdio: "inherit" });
+      try {
+        await execa("pnpm", ["install"], { stdio: "inherit" });
+      } catch (error) {
+        console.error("\n❌ Error: pnpm is not installed.");
+        console.log("\nTo install pnpm, run one of these commands:");
+        console.log("  npm install -g pnpm");
+        console.log("  curl -fsSL https://get.pnpm.io/install.sh | sh -\n");
+        process.exit(1);
+      }
     } else {
       console.log("[Dry Run] Would run: pnpm install");
     }
